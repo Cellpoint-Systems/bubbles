@@ -26,8 +26,8 @@ applications. These components are used in production in [Glow][glow],
 A spinner, useful for indicating that some kind an operation is happening.
 There are a couple default ones, but you can also pass your own ”frames.”
 
-* [Example code, basic spinner](https://github.com/charmbracelet/tea/tree/master/examples/spinner/main.go)
-* [Example code, various spinners](https://github.com/charmbracelet/tea/tree/master/examples/spinners/main.go)
+* [Example code, basic spinner](https://github.com/charmbracelet/bubbletea/tree/master/examples/spinner/main.go)
+* [Example code, various spinners](https://github.com/charmbracelet/bubbletea/tree/master/examples/spinners/main.go)
 
 
 ## Text Input
@@ -38,8 +38,8 @@ A text input field, akin to an `<input type="text">` in HTML. Supports unicode,
 pasting, in-place scrolling when the value exceeds the width of the element and
 the common, and many customization options.
 
-* [Example code, one field](https://github.com/charmbracelet/tea/tree/master/examples/textinput/main.go)
-* [Example code, many fields](https://github.com/charmbracelet/tea/tree/master/examples/textinputs/main.go)
+* [Example code, one field](https://github.com/charmbracelet/bubbletea/tree/master/examples/textinput/main.go)
+* [Example code, many fields](https://github.com/charmbracelet/bubbletea/tree/master/examples/textinputs/main.go)
 
 ## Text Area
 
@@ -50,13 +50,25 @@ spans multiple lines. Supports unicode, pasting, vertical scrolling when the
 value exceeds the width and height of the element,  and many customization
 options.
 
-* [Example code, chat input](https://github.com/charmbracelet/tea/tree/master/examples/chat/main.go)
-* [Example code, story time input](https://github.com/charmbracelet/tea/tree/master/examples/textarea/main.go)
+* [Example code, chat input](https://github.com/charmbracelet/bubbletea/tree/master/examples/chat/main.go)
+* [Example code, story time input](https://github.com/charmbracelet/bubbletea/tree/master/examples/textarea/main.go)
 
+## Table
+
+<img src="https://stuff.charm.sh/bubbles-examples/table.gif" width="400" alt="Table Example">
+
+A component for displaying and navigating tabular data (columns and rows).
+Supports vertical scrolling and many customization options.
+
+* [Example code, countries and populations](https://github.com/charmbracelet/bubbletea/tree/master/examples/table/main.go)
 
 ## Progress
 
-<img src="https://stuff.charm.sh/bubbles-examples/progress.gif" width="800" alt="Progressbar Example">
+<picture>
+  <source media="(max-width: 800px)" srcset="https://stuff.charm.sh/bubbles-examples/progress.gif">
+  <source media="(min-width: 800px)" width="800" srcset="https://stuff.charm.sh/bubbles-examples/progress.gif">
+  <img src="https://stuff.charm.sh/bubbles-examples/progress.gif" alt="Progressbar Example">
+</picture>
 
 A simple, customizable progress meter, with optional animation via
 [Harmonica][harmonica]. Supports solid and gradient fills. The empty and filled
@@ -83,13 +95,17 @@ logic and visualize pagination however you like.
 
 ## Viewport
 
-<img src="https://stuff.charm.sh/bubbles-examples/viewport.gif?0" width="600" alt="Viewport Example">
+<picture>
+  <source media="(max-width: 600px)" srcset="https://stuff.charm.sh/bubbles-examples/viewport.gif?0">
+  <source media="(min-width: 600px)" width="600" srcset="https://stuff.charm.sh/bubbles-examples/viewport.gif?0">
+  <img src="https://stuff.charm.sh/bubbles-examples/viewport.gif?0" alt="Viewport Example">
+</picture>
 
 A viewport for vertically scrolling content. Optionally includes standard
 pager keybindings and mouse wheel support. A high performance mode is available
 for applications which make use of the alternate screen buffer.
 
-* [Example code](https://github.com/charmbracelet/tea/tree/master/examples/pager/main.go)
+* [Example code](https://github.com/charmbracelet/bubbletea/tree/master/examples/pager/main.go)
 
 This component is well complemented with [Reflow][reflow] for ANSI-aware
 indenting and text wrapping.
@@ -99,16 +115,20 @@ indenting and text wrapping.
 
 ## List
 
-<img src="https://stuff.charm.sh/bubbles-examples/list.gif" width="600" alt="List Example">
+<picture>
+  <source media="(max-width: 600px)" srcset="https://stuff.charm.sh/bubbles-examples/list.gif">
+  <source media="(min-width: 600px)" width="600" srcset="https://stuff.charm.sh/bubbles-examples/list.gif">
+  <img src="https://stuff.charm.sh/bubbles-examples/list.gif" alt="List Example">
+</picture>
 
 A customizable, batteries-included component for browsing a set of items.
 Features pagination, fuzzy filtering, auto-generated help, an activity spinner,
 and status messages, all of which can be enabled and disabled as needed.
 Extrapolated from [Glow][glow].
 
-* [Example code, default list](https://github.com/charmbracelet/tea/tree/master/examples/list-default/main.go)
-* [Example code, simple list](https://github.com/charmbracelet/tea/tree/master/examples/list-simple/main.go)
-* [Example code, all features](https://github.com/charmbracelet/tea/tree/master/examples/list-fancy/main.go)
+* [Example code, default list](https://github.com/charmbracelet/bubbletea/tree/master/examples/list-default/main.go)
+* [Example code, simple list](https://github.com/charmbracelet/bubbletea/tree/master/examples/list-simple/main.go)
+* [Example code, all features](https://github.com/charmbracelet/bubbletea/tree/master/examples/list-fancy/main.go)
 
 
 ## Timer
@@ -133,7 +153,11 @@ can be customized as you see fit.
 
 ## Help
 
-<img src="https://stuff.charm.sh/bubbles-examples/help.gif" width="500" alt="Help Example">
+<picture>
+  <source media="(max-width: 500px)" srcset="https://stuff.charm.sh/bubbles-examples/help.gif">
+  <source media="(min-width: 500px)" width="500" srcset="https://stuff.charm.sh/bubbles-examples/help.gif">
+  <img src="https://stuff.charm.sh/bubbles-examples/help.gif" alt="Help Example">
+</picture>
 
 A customizable horizontal mini help view that automatically generates itself
 from your keybindings. It features single and multi-line modes, which the user
@@ -212,7 +236,7 @@ If you’ve built a Bubble you think should be listed here,
 
 ## License
 
-[MIT](https://github.com/charmbracelet/teaparty/raw/master/LICENSE)
+[MIT](https://github.com/charmbracelet/bubbletea/raw/master/LICENSE)
 
 
 ***
